@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Git</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <header>
+        <h1>Guía de Comandos Git</h1>
+        <img src="./assets/img/git.svg">   
+    </header>
+    <main>
+        <section>
+            <h2>¿Qué es Git?</h2>
+            <p>Git es un sistema de control de versiones open Source, gratuito, diseñado para manejar todo, desde proyectos pequeños a muy grandes, permitiendo el trabajo colaborativo.</p>
+        </section>
+        <section>
+            <h2>Comandos Git</h2>
+            <div class="command">
+                <h3>git init</h3>
+                <p>El comando <b>git init</b> se utiliza para crear un nuevo repositorio de Git. Esto inicializa un nuevo subdirectorio llamado <i>.git</i> que contiene todos los archivos necesarios del repositorio, esencialmente creando una nueva instancia de un repositorio de Git en el directorio actual.</p>
+                <b>Ejemplo:</b>
+                <b><code>git init</code></b>
+            </div>
+            <div class="command">
+                <h3>git remote add</h3>
+                <p>El comando <b>git remote add</b> permite añadir un nuevo repositorio remoto. Esto es útil para trabajar en colaboración, ya que puedes añadir la URL de un repositorio remoto y darle un nombre para poder hacer referencia a él fácilmente en comandos posteriores.</p>
+                <b>Ejemplo:</b>
+                <b><code>git remote add origin https://github.com/CristiannLimaR/SuperKinal.git</code></b>
+            </div>
+            <div class="command">
+                <h3>git add</h3>
+                <p>El comando <b>git add</b> se utiliza para añadir archivos al área de preparación. Esto indica a Git que deseas incluir las actualizaciones de esos archivos en el próximo commit. Puedes añadir archivos individuales, directorios completos o utilizar patrones para seleccionar múltiples archivos a la vez.</p>
+                <b>Ejemplo:</b>
+                <b><code>git add archivo.txt</code></b>
+            </div>
+            <div class="command">
+                <h3>git status</h3>
+                <p>El comando <b>git status</b> muestra el estado actual del repositorio, incluyendo los archivos que están en el área de preparación, los que no están rastreados y los que han sido modificados. Esto es útil para ver qué cambios se han realizado y qué archivos están listos para ser confirmados.</p>
+                <b>Ejemplo:</b>
+                <b><code>git status</code></b>
+            </div>
+            <div class="command">
+                <h3>git branch</h3>
+                <p>El comando <b>git branch</b> permite gestionar las ramas del repositorio. Puedes crear nuevas ramas, listar las ramas existentes y eliminar ramas que ya no necesitas. Trabajar con ramas facilita el desarrollo de nuevas funcionalidades sin afectar la rama principal del proyecto.</p>
+                <b>Ejemplo:</b>
+                <b><code>git branch </code></b>
+            </div>
+            <div class="command">
+                <h3>git checkout</h3>
+                <p>El comando <b>git checkout</b> se utiliza para cambiar entre ramas o restaurar archivos en el directorio de trabajo. Al cambiar de rama, Git actualiza los archivos del directorio de trabajo para reflejar la versión más reciente de la rama seleccionada.</p>
+                <b>Ejemplo:</b>
+                <b><code>git checkout rama</code></b>
+            </div>
+            <div class="command">
+                <h3>git pull</h3>
+                <p>El comando <b>git pull</b> descarga cambios desde un repositorio remoto y los fusiona con la rama actual del repositorio local. Esto asegura que tu repositorio local esté actualizado con los últimos cambios realizados por otros colaboradores.</p>
+                <b>Ejemplo:</b>
+                <b><code>git pull origin master</code></b>
+            </div>
+            <div class="command">
+                <h3>git push</h3>
+                <p>El comando <b>git push</b> se utiliza para subir los cambios locales a un repositorio remoto. Esto hace que tus commits locales sean accesibles para otros colaboradores en el repositorio remoto. Puedes especificar la rama que deseas empujar.</p>
+                <b>Ejemplo:</b>
+                <b><code>git push origin master</code></b>
+            </div>
+            <div class="command">
+                <h3>git merge</h3>
+                <p>El comando <b>git merge</b> se utiliza para fusionar una rama especificada con la rama actual. Esto integra los cambios de diferentes ramas en una sola. Es útil para combinar el trabajo de múltiples desarrolladores.</p>
+                <b>Ejemplo:</b>
+                <b><code>git merge rama</code></b>
+            </div>
+            <div class="command">
+                <h3>git commit</h3>
+                <p>El comando <b>git commit</b> guarda los cambios en el historial del repositorio. Cada commit incluye un mensaje que describe los cambios realizados. Esto crea un punto en el historial del proyecto al que se puede volver si es necesario.</p>
+                <b>Ejemplo:</b>
+                <b><code>git commit -m "Mensaje de commit"</code></b>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
